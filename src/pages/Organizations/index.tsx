@@ -19,10 +19,14 @@ const Organizations = () => {
         setOrganizations(res.data);
         setLoading(false);
       })
+      .catch(err => {
+        console.log(err);
+        setLoading(false);
+      });
   }, []);
 
   return (
-    <PageContainer>
+    <PageContainer data-testid='org-1'>
       <Header title='Organizations' />
       <NonProfit info={selectedOrg} />
       {loading ? <Loader /> : <OrganizationsList organizations={organizations} setSelectedOrg={setSelectedOrg} selectedOrg={selectedOrg} />}

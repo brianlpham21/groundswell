@@ -20,7 +20,7 @@ export const OrganizationsList = ({ organizations, setSelectedOrg, selectedOrg }
   return (
     <div>
       {organizations.map((org) =>
-          <OrgSelection className={selectedOrg.ein === org.ein && 'active'} key={org.ein} onClick={() => setSelectedOrg(org)}>{org.name}</OrgSelection>
+          <OrgSelection role="nonprofit" className={selectedOrg.ein === org.ein && 'active'} key={org.ein} onClick={() => setSelectedOrg(org)}>{org.name}</OrgSelection>
         )}
     </div>
   )
