@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+[![Groundswell](https://miro.medium.com/max/1400/1*Jnl2_XPrpK9U6ww-BtrAOg.jpeg)](https://groundswell.io)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Groundswell unlocks philanthropic giving at scale by making charity an employee benefit, giving people the power of a personal foundation in the palm of their hand: a 401K for giving.
+
+## Instructions
+
+1. Add a new menu item "Organizations" to the Header navigation menu 
+2. Create a page for the new item that reaches out to 'https://gs.npkn.net/npo' (axios is already in the dependencies)
+3. Display the list of Non Profit Organizations that are returned on the new Organizations page
+4. Clicking on an individual Non Profit Organization should navigate to a screen that displays the individual 
+   organization info: avatar, name, type, and description
+5. Add tests for the new page
+
+See app/assets/screenshots for a rough mockup, feel free to add your own style to it:
+
+<img src="./src/assets/screenshots/screenshot.jpg" width="640" height="417" alt="npo screen navigation">
 
 ## Available Scripts
 
-In the project directory, you can run:
+To install the dependencies, run:
+
+### `yarn install`
+
+To run the app:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+None, implied or granted.
