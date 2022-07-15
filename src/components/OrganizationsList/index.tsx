@@ -18,25 +18,25 @@ export const OrganizationsList = ({ organizations, setSelectedOrg, selectedOrg }
   if (organizations.length === 0) { return <div>No Organizations Found.</div> }
 
   return (
-    <OrgListContainer>
+    <div>
       {organizations.map((org) =>
           <OrgSelection className={selectedOrg.ein === org.ein && 'active'} key={org.ein} onClick={() => setSelectedOrg(org)}>{org.name}</OrgSelection>
         )}
-    </OrgListContainer>
+    </div>
   )
 }
-
-const OrgListContainer = styled.div`
-`;
 
 const OrgSelection = styled.button`
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 2px;
   display: block;
-  margin-bottom: 5px;
-  padding: 10px;
+  margin-bottom: 12px;
+  padding: 12px;
   width: 100%;
+  -moz-box-shadow:    0 0 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow:         0 0 8px rgba(0, 0, 0, 0.2);
 
   &.active {
     background-color: #00d084;
